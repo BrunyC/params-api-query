@@ -1,4 +1,4 @@
-# api-query-params
+# params-api-query
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -19,7 +19,7 @@
 ## Install
 
 ```sh
-npm i --save api-query-params
+npm i --save params-api-query
 ```
 
 ## Usage
@@ -47,7 +47,7 @@ The resulting object contains the following properties:
 #### Example
 
 ```js
-import aqp from 'api-query-params';
+import aqp from 'params-api-query';
 
 const query = aqp(
   'status=sent&timestamp>2016-01-01&author:firstName=/john/i&limit=100&skip=50&sort=-timestamp&populate=logs&fields=id,logs.ip'
@@ -70,7 +70,7 @@ const query = aqp(
 
 ```js
 import express from 'express';
-import aqp from 'api-query-params';
+import aqp from 'params-api-query';
 import User from './models/User';
 
 const app = express();
@@ -350,12 +350,12 @@ aqp('key1=VALUE&key2=10.5&key3=20&key4=foo', {
 
 MIT © [Loris Guignard](http://github.com/loris)
 
-[npm-url]: https://npmjs.org/package/api-query-params
-[npm-image]: https://img.shields.io/npm/v/api-query-params.svg?style=flat-square
-[travis-url]: https://travis-ci.org/loris/api-query-params
-[travis-image]: https://img.shields.io/travis/loris/api-query-params.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/loris/api-query-params
-[coveralls-image]: https://img.shields.io/coveralls/loris/api-query-params.svg?style=flat-square
-[depstat-url]: https://david-dm.org/loris/api-query-params
-[depstat-image]: https://david-dm.org/loris/api-query-params.svg?style=flat-square
-[download-badge]: http://img.shields.io/npm/dm/api-query-params.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/params-api-query
+[npm-image]: https://img.shields.io/npm/v/params-api-query.svg?style=flat-square
+[travis-url]: https://travis-ci.org/loris/params-api-query
+[travis-image]: https://img.shields.io/travis/loris/params-api-query.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/loris/params-api-query
+[coveralls-image]: https://img.shields.io/coveralls/loris/params-api-query.svg?style=flat-square
+[depstat-url]: https://david-dm.org/loris/params-api-query
+[depstat-image]: https://david-dm.org/loris/params-api-query.svg?style=flat-square
+[download-badge]: http://img.shields.io/npm/dm/params-api-query.svg?style=flat-square

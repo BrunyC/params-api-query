@@ -224,7 +224,7 @@ const getFilter = (filter, params, options) => {
 
     newKey = key
     if(key.includes(":")) {
-      newKey = key.replaceAll(':', '.')
+      newKey = key.replace(/:/g, '.')
     }
 
     return {

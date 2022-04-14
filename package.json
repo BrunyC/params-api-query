@@ -1,18 +1,14 @@
 {
   "name": "params-api-query",
-  "version": "5.0.0",
+  "version": "5.0.3",
   "description": "Convert query parameters from API urls to MongoDB queries",
-  "main": "dist/cjs/index.js",
-  "files": [
-    "dist/"
-  ],
+  "main": "./src/index.js",
   "scripts": {
-    "build": "babel ./src/index.js --out-file ./dist/cjs/index.js",
+    "build": "babel ./src/index.js",
     "coverage": "nyc npm test && nyc report --reporter=html",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint ./src ./test",
     "postcoveralls": "rimraf ./coverage",
-    "prebuild": "npm run lint && rimraf ./dist && mkdirp ./dist/cjs",
     "prepublish": "npm run build",
     "release": "np",
     "test": "ava"
